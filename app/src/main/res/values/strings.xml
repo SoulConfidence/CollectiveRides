@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">CollectiveRides</string>
+    <string name="app_name">Совместные поездки</string>
+    <string name="google_maps_key">AIzaSyDr1ovxlY6iAkvSF2RNpcopefCaRkU0ghU</string>
 </resources>
