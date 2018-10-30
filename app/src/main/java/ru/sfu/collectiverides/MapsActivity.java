@@ -1,5 +1,5 @@
 package ru.sfu.collectiverides;
-
+//подключение библиотек
 import android.content.Context;
 import android.graphics.Point;
 import android.location.Address;
@@ -21,7 +21,7 @@ import ru.sfu.maps.DrawMarker;
 import ru.sfu.maps.DrawRouteMaps;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
-
+//инициализация точек отправления и окончания
     private GoogleMap mMap;
     private String pointA;
     private String pointB;
@@ -40,7 +40,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         pointB = getIntent().getExtras().getString("pointB");
     }
 
-
+//получение данных из строки pointB
     public LatLng getLocationFromAddress(Context context, String strAddress) {
 
         Geocoder coder = new Geocoder(context);
@@ -62,7 +62,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
         return point;
     }
-
+//Создание точек для отображения на карте
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
