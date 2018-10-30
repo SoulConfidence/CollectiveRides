@@ -1,5 +1,5 @@
 package ru.sfu.maps;
-
+//подключение библиотек
 import com.google.android.gms.maps.model.LatLng;
 
 import org.json.JSONArray;
@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DataRouteParser {
-
+//получение данных о местоположении
     public List<List<HashMap<String, String>>> parse(JSONObject jObject) {
 
         List<List<HashMap<String, String>>> routes = new ArrayList<>();
@@ -62,6 +62,7 @@ public class DataRouteParser {
      * Method to decode polyline points
      * Courtesy : http://jeffreysambells.com/2010/05/27/decoding-polylines-from-google-maps-direction-api-with-java
      */
+    //Депозиция по координатам
     private List<LatLng> decodePoly(String encoded) {
 
         List<LatLng> poly = new ArrayList<>();
